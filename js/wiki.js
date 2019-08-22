@@ -45,8 +45,10 @@ function acao(nomeProjeto, nomeAcao, dataInicio, dataFinal, detalhes) {
 ///
 new projeto("EP - Noites Tranquilas", "12-07-2019", dataAtual);
 
-new acao('EP - Noites Tranquilas', 'Composição e Produção', '12-07-2019', '22-08-2019', [''])
-new acao('EP - Noites Tranquilas', 'Refinando Arranjos', '22-08-2019', dataAtual, [''])
+new acao('EP - Noites Tranquilas', 'Composição e Produção', '12-07-2019', '22-08-2019', ['O processo de composição deste EP foi muito dinâmico e acelerado. Já vinha marinando um conceito de músicas representando o cotidiano de uma noite tranquila, familiar, intimista. Dentro dessa perspectiva fui criando várias faixas instrumentais que representavam pequenos fragmentos desse cotidiano moderno, com a presença de afetividade, tecnologia e reflexões', 'O processo de produção foi iniciado mas logo comecei a procrastinar e quase coloquei todo esse projeto na geladeira (prática muito do meu feitio...). Me organizei e iniciei uma maratona de produção buscando concluir os arranjos e as gravações o mais rápido possível. Foi um processo relativamente longo, com muitas idas e vindas, inspirações e luta... porém depois de vencer a inércia o trabalho foi se tornando cada vez mais fácil e prazeroso.'])
+new acao('EP - Noites Tranquilas', 'Refinando Arranjos', '22-08-2019', '22-08-2019', ['Uma vez com as faixas bem gravadas e arranjadas inicei uma rodada extensa para elaborar as emoções refinando os arranjos, elemetos, estruturas, etc... Neste projeto as músicas chegaram em sua grande maioria prontas e com estruturas decentes, portanto não foi necessário muito trabalho nesta etapa.'])
+new acao('EP - Noites Tranquilas', 'Mixagem', '23-08-2019', dataAtual, [''])
+
 ///
 
 
