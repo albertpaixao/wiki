@@ -1,0 +1,50 @@
+* {
+  font-family: 'Proza Libre', sans-serif;
+  color: white;
+  background-color: black;
+  opacity: 1;
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+
+// Classes
+.hide {
+  display: none;
+}
+
+
+// Ids
+#tela {
+  margin: 3rem auto 3rem auto;
+
+
+  @media (max-width: 420px) {
+    width: 95%;
+  }
+
+  @media (min-width: 700px) {
+    width: 70%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+
+
+  div {
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    padding-bottom: 2rem;
+
+    transition: 2s;
+  }
+}
