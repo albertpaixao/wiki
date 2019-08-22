@@ -21,19 +21,21 @@ h1 {
 
 #tela {
   margin: 3rem auto 3rem auto;
-  /*
-    @media (max-width: 420px) {
-      width: 95%;
-    }
-
-    @media (min-width: 700px) {
-      width: 70%;
-    }
-
-    @media (min-width: 1024px) {
-      width: 50%;
-    }
-  */
+}
+@media (max-width: 420px) {
+  #tela {
+    width: 95%;
+  }
+}
+@media (min-width: 700px) {
+  #tela {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  #tela {
+    width: 50%;
+  }
 }
 #tela div {
   border-style: solid;
