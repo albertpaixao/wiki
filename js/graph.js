@@ -227,3 +227,7 @@ graph();
 window.addEventListener("resize", function() {
 	graph();
 });
+
+window.addEventListener("deviceorientation", function() {
+	graph();
+});
