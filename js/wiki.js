@@ -61,9 +61,6 @@ new acao('Projetos Open Source', 'Pesquisa', '13-08-2019', '15-08-2019', ['A pes
 new acao('Projetos Open Source', 'Coding', '17-08-2019', '21-08-2019', ['Mão na massa em pensar formas de tornar as ideias em algo palpável na internet. Escolhi realizar a programação toda em Javascript puro afim de deixar o site super leve.'])
 new acao('Projetos Open Source', 'teste', '18-08-2019', '19-08-2019', ['teste']);
 
-new projeto('teste', '01-01-2019', '31-12-2019')
-
-
 
 
 //
