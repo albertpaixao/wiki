@@ -5,7 +5,7 @@ let canvas = document.getElementById('graph');
 let windowWidth = tela.offsetWidth / 48;
 
 canvas.height = dataBase.length * 20 + 50;
-canvas.width = windowWidth * 48;
+canvas.width = windowWidth * 48 + 100;
 let ctx = canvas.getContext('2d');
 let y = 0
 
@@ -14,12 +14,12 @@ function draw(inicio, final, projetoNome) {
   ctx.fillStyle = 'white'
   ctx.fillRect(inicio, y, final, 15);
 
-/*
-  ctx.fillStyle = 'red'
-  ctx.font = '12px Times New Roman'
-  ctx.fillText(projetoNome, 0, y+12);
+
+  ctx.fillStyle = 'white';
+  ctx.font = '12px Proza Libre';
+  ctx.fillText(projetoNome, inicio + final + 3, y+12);
   console.log('escrevi');
-  */
+
 }
 
 
@@ -161,7 +161,7 @@ function lerDatasProjetos() {
     let projetoNome = dataBase[i].nomeProjeto;
 
 
-    draw(mesInicio, mesFinal, projetoNome);
+    draw(mesInicio, mesFinal, i + 1);
 
     y += 20;
   }

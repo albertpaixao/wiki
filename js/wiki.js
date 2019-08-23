@@ -43,6 +43,7 @@ function acao(nomeProjeto, nomeAcao, dataInicio, dataFinal, detalhes) {
 ///
 /*Projetos*/
 ///
+
 new projeto("EP - Noites Tranquilas", "12-07-2019", dataAtual);
 
 new acao('EP - Noites Tranquilas', 'Composição e Produção', '12-07-2019', '22-08-2019', ['O processo de composição deste EP foi muito dinâmico e acelerado. Já vinha marinando um conceito de músicas representando o cotidiano de uma noite tranquila, familiar, intimista. Dentro dessa perspectiva fui criando várias faixas instrumentais que representavam pequenos fragmentos desse cotidiano moderno, com a presença de afetividade, tecnologia e reflexões', 'O processo de produção foi iniciado mas logo comecei a procrastinar e quase coloquei todo esse projeto na geladeira (prática muito do meu feitio...). Me organizei e iniciei uma maratona de produção buscando concluir os arranjos e as gravações o mais rápido possível. Foi um processo relativamente longo, com muitas idas e vindas, inspirações e luta... porém depois de vencer a inércia o trabalho foi se tornando cada vez mais fácil e prazeroso.'])
@@ -58,6 +59,10 @@ new projeto("Projetos Open Source", '17-08-2019', '21-08-2019');
 new acao('Projetos Open Source', 'Brainstorm', '12-08-2019', '12-08-2019', ['A proposta é criar uma forma de glossário dos principais projetos públicos que desenvolvo ao longo do ano. Uma plataforma pra dividir projetos, ideias e também pra ajudar na noção de tempo e continuidade que um projeto pode ter.'])
 new acao('Projetos Open Source', 'Pesquisa', '13-08-2019', '15-08-2019', ['A pesquisa veio pra trazer inspiração de outros projetos e estéticas. Me inspirei muito na proposta do Oscean do Devine'])
 new acao('Projetos Open Source', 'Coding', '17-08-2019', '21-08-2019', ['Mão na massa em pensar formas de tornar as ideias em algo palpável na internet. Escolhi realizar a programação toda em Javascript puro afim de deixar o site super leve.'])
+new acao('Projetos Open Source', 'teste', '18-08-2019', '19-08-2019', ['teste']);
+
+new projeto('teste', '01-01-2019', '31-12-2019')
+
 
 
 
@@ -135,7 +140,7 @@ function lerProjetos() {
     h1.id = i;
     h1.classList.add('p-2')
     h1.setAttribute("onclick", 'showHide('+ i +')');
-    let nomeProjeto = document.createTextNode(dataBase[i].nomeProjeto);
+    let nomeProjeto = document.createTextNode(i+1 + ')' + ' ' + dataBase[i].nomeProjeto);
     h1.appendChild(nomeProjeto);
     tela.appendChild(h1);
 
