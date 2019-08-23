@@ -133,6 +133,7 @@ function lerProjetos() {
     // Projetos
     let h1 = document.createElement('h1')
     h1.id = i;
+    h1.classList.add('p-2')
     h1.setAttribute("onclick", 'showHide('+ i +')');
     let nomeProjeto = document.createTextNode(dataBase[i].nomeProjeto);
     h1.appendChild(nomeProjeto);

@@ -183,23 +183,21 @@ function desenharTempoP (x) {
 
 function desenharMes (x, texto) {
   ctx.fillStyle = 'white'
-  ctx.moveTo(x,y);
-  ctx.lineTo(x,y-5);
-  ctx.stroke()
-
-  ctx.fillStyle = 'white'
   ctx.font = '12px Proza Libre'
   ctx.fillText(texto, x, y+15);
 }
 
 
 lerDatasProjetos();
-y = y + 30
+
+
 
 let meses = ['Jan', 'Fev' , 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
 let mesesNum = [1,2,3,4,5,6,7,8,9,10,11,12]
 let n = 0
+
 function desenharTempo(){
+  y = y + 30
   for (var i = 0; i < 49; i++) {
     if (i === 0 ||i === 4 ||i === 8 ||i === 12 ||i === 16 ||i === 20 ||i === 24 ||i === 28 ||i === 32 ||i === 36 ||i === 40 ||i === 44) {
 
@@ -221,8 +219,20 @@ function desenharTempo(){
 desenharTempo();
 }
 
+function anime () {
+  let h1 = document.getElementsByTagName('h1')
+  for (var i = 0; i < h1.length; i++) {
+    h1[i].style.transitionDelay = i/2 + 's';
+    h1[i].classList.add('anime')
+    // h1[i].classList.add('p-2')
+  }
+}
+
 
 graph();
+anime();
+
+
 
 window.addEventListener("resize", function() {
 	graph();
