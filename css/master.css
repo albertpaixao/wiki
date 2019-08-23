@@ -13,10 +13,17 @@ h1 {
   font-family: "Libre Baskerville", serif;
   font-weight: bold;
   margin-top: 3rem;
+  color: black;
+  transition: 1s;
 }
 
 .hide {
   display: none;
+}
+
+.anime {
+  color: black;
+  background: white;
 }
 
 #tela {
